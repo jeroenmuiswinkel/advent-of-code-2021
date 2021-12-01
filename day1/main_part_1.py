@@ -1,6 +1,5 @@
 with open('data.txt') as f:
-    lines = f.readlines()
-data = [int(number.replace("\n", "")) for number in lines]
+    data = [int(number) for number in f.readlines()]
 
 times_depth_increases = 0
 for i in range(len(data)-1):

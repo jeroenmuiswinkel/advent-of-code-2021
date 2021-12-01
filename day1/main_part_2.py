@@ -1,6 +1,6 @@
 with open('data.txt') as f:
-    lines = f.readlines()
-data = [int(number.replace("\n", "")) for number in lines]
+    data = [int(number) for number in f.readlines()]
+
 
 sums_of_measurements = [data[i]+data[i+1]+data[i+2] for i in range(len(data)-2)]
 
