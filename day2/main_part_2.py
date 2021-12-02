@@ -4,6 +4,7 @@ with open('data.txt') as f:
 aim = 0
 forward = 0
 downward = 0
+
 for direction in directions:
     if direction[0].startswith("forward"):
         forward += int(direction[1])
